@@ -1,5 +1,4 @@
 [build]
-  command = "echo 'Build handled by GitHub Actions' && echo 'No build on Netlify side'"
   publish = "build/web"
 
 [[headers]]
@@ -8,12 +7,6 @@
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
     X-Content-Type-Options = "nosniff"
-    Referrer-Policy = "strict-origin-when-cross-origin"
-
-[[headers]]
-  for = "/flutter_service_worker.js"
-  [headers.values]
-    Cache-Control = "no-cache"
 
 [[headers]]
   for = "/manifest.json"
