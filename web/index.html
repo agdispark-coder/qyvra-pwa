@@ -22,9 +22,6 @@
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
-  <!-- iOS Splash Screens -->
-  <link rel="apple-touch-startup-image" href="icons/Icon-192.png">
-
   <style>
     body {
       background-color: #FAF7F4;
@@ -65,15 +62,6 @@
     <div class="loading-text">QYVRA</div>
   </div>
 
-  <!-- Service Worker Registration -->
-  <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('flutter-first-frame', function () {
-        navigator.serviceWorker.register('flutter_service_worker.js');
-      });
-    }
-  </script>
-
-  <script src="flutter_bootstrap.js" async></script>
+  <script src="flutter.js" defer></script>
 </body>
 </html>
